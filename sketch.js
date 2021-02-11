@@ -1,9 +1,7 @@
 const Engine = Matter.Engine;
-const World = Matter.World;
+const World= Matter.World;
 const Bodies = Matter.Bodies;
-const Body = Matter.Body;
-const Render = Matter.Render;
-const Constraint=Matter.Constraint;
+const Constraint = Matter.Constraint;
 
 var matter, engine;
 var ballImg;
@@ -22,14 +20,14 @@ function setup() {
 
 
 
-	Engine.run(engine);
+	
 
 
 }
 
 function draw() {
 	background(backgroundImg);
-
+        Engine.run(engine);
 
 
 }
