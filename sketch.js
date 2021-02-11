@@ -5,8 +5,12 @@ const Body = Matter.Body;
 const Render = Matter.Render;
 const Constraint=Matter.Constraint;
 
+var ballImg;
+var backgroundImg;
+
 
 function preload(){
+	backgroundImg = loadImage("background.png");
 	
 }
 
@@ -23,6 +27,7 @@ function setup() {
 }
 
 function draw() {
+	background(backgroundImg);
 
 
 
