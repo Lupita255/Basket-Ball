@@ -5,6 +5,7 @@ const Body = Matter.Body;
 const Render = Matter.Render;
 const Constraint=Matter.Constraint;
 
+var matter, engine;
 var ballImg;
 var backgroundImg;
 
