@@ -19,7 +19,7 @@ function setup() {
 	engine = Engine.create();
 	world = engine.world;
 
-        basketball = new Ball(100,460,50)
+        basketball = new ball(100,460,50)
 	
 	
         Engine.run(engine); 
