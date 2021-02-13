@@ -31,7 +31,7 @@ function setup() {
 function draw() {
 	background(backgroundImg);
 	
-	  image(hoop,400,340,200,300);
+	  image(hoop,400,340,500,400);
         
 
         basketball.display();
