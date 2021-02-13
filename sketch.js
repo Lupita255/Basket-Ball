@@ -13,7 +13,7 @@ var hoop;
 
 function preload(){
 	backgroundImg = loadImage("background.png");
-	hoop = loadImage("hoop.png");
+	hoop = loadImage("hoop2.png");
 }
 
 function setup() {
