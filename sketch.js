@@ -8,10 +8,12 @@ var basketball;
 
 var attach, attachObj;
 
+var hoop;
+
 
 function preload(){
 	backgroundImg = loadImage("background.png");
-	
+	hoop = loadImage("hoop.png");
 }
 
 function setup() {
@@ -28,6 +30,8 @@ function setup() {
 
 function draw() {
 	background(backgroundImg);
+	
+	  image(hoop,400,340,200,300);
         
 
         basketball.display();
