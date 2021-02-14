@@ -10,6 +10,8 @@ var attach, attachObj;
 
 var bin1, bin2, bin3;
 
+var gameState = "onSling";
+
 
 function preload(){
 	backgroundImg = loadImage("background.png");
@@ -23,7 +25,7 @@ function setup() {
 
         basketball = new ball(200,450,50)
 	
-	attach=new chain(basketball.body,{x:200, y:450});
+	attach = new chain(basketball.body,{x:200, y:450});
 
 	bin1 = new Bin(950,550,230,20);
 	bin2 = new Bin(825,490,20,130);
@@ -48,10 +50,20 @@ function draw() {
 }
 
 function mouseDragged(){
-	basketball.body.position.x = mouseX;
-        basketball.body.position.y = mouseY;
+    if (gameState!=="launched"){
+        Matter.Body.setPosition(basketball.body, {x: mouseX , y: mouseY});
+    }
 }
 
+
 function mouseReleased(){
-	attach.fly();
+    attach.fly();
+    gameState = "launched";
+}
+
+function keyPressed(){
+  if(keyCode === 32){
+    Matter.Body.setPosition(basketball.body,{x:200, y:450});
+    attach.attach(basketball.body);
+  }
 }
