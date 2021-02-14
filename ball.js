@@ -4,7 +4,7 @@ class ball{
 		var options={
 			isStatic:true,
 			restitution :0,
-            friction :1,
+                        friction :1,
 			}
 		this.x=x;
 		this.y=y;
