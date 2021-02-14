@@ -26,7 +26,7 @@ function setup() {
 	attach=new chain(basketball.body,{x:200, y:400});
 
 	bin1 = new Bin(950,550,230,20);
-	bin2 = new Bin(795,500,20,130);
+	bin2 = new Bin(815,515,20,130);
 	//bin3 = new Bin(965,605,20,130);
 	
         Engine.run(engine); 
