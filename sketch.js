@@ -8,12 +8,12 @@ var basketball;
 
 var attach, attachObj;
 
-var hoop;
+var bin;
 
 
 function preload(){
 	backgroundImg = loadImage("background.png");
-	hoop = loadImage("hoop2.png");
+	
 }
 
 function setup() {
@@ -22,6 +22,8 @@ function setup() {
 	world = engine.world;
 
         basketball = new ball(200,400,50)
+	
+	bin=new dustbin(1200,650);
 	
 	attach=new chain(basketball.body,{x:200, y:400});
 
@@ -34,8 +36,6 @@ function setup() {
 function draw() {
 	background(backgroundImg);
 	
-	  image(hoop,750,200,450,400);
-        
 
         basketball.display();
 	
