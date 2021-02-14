@@ -23,7 +23,7 @@ function setup() {
 
         basketball = new ball(200,400,50)
 	
-	attach=new chain(basketball.body,{x:235, y:420});
+	attach=new chain(basketball.body,{x:200, y:400});
 
 	
 	
@@ -41,4 +41,13 @@ function draw() {
 	
 	attach.display();
 	
+}
+
+function mouseDragged(){
+	basketball.body.position.x = mouseX;
+        basketball.body.position.y = mouseY;
+}
+
+function mouseReleased(){
+	attach.fly();
 }
