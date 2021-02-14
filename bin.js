@@ -6,7 +6,6 @@ class dustbin
     }
        this.x=x;
        this.y=y;
-       this.image = loadImage("dustbingreen.png")
        this.dustbinWidth=200;
        this.dustbinHeight=213;
        this.wallThickness=20;
