@@ -21,9 +21,9 @@ function setup() {
 	engine = Engine.create();
 	world = engine.world;
 
-        basketball = new ball(200,400,50)
+        basketball = new ball(200,450,50)
 	
-	attach=new chain(basketball.body,{x:200, y:400});
+	attach=new chain(basketball.body,{x:200, y:450});
 
 	bin1 = new Bin(950,550,230,20);
 	bin2 = new Bin(825,490,20,130);
