@@ -8,7 +8,7 @@ var basketball;
 
 var attach, attachObj;
 
-var bin;
+var bin1, bin2, bin3;
 
 
 function preload(){
@@ -23,11 +23,11 @@ function setup() {
 
         basketball = new ball(200,400,50)
 	
-	bin=new dustbin(1200,650);
-	
 	attach=new chain(basketball.body,{x:200, y:400});
 
-	
+	bin1 = new Bin(840,660,230,20);
+	bin2 = new Bin(715,605,20,130);
+	bin3 = new Bin(965,605,20,130);
 	
         Engine.run(engine); 
 
@@ -40,6 +40,10 @@ function draw() {
         basketball.display();
 	
 	attach.display();
+	
+	bin1.display();
+	bin2.display();
+	bin3.display();
 	
 }
 
