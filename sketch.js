@@ -23,6 +23,9 @@ function setup() {
 
         basketball = new ball(200,400,50)
 	
+	attach=new chain(basketball.body,{x:235, y:420});
+
+	
 	
         Engine.run(engine); 
 
@@ -35,5 +38,7 @@ function draw() {
         
 
         basketball.display();
+	
+	attach.display();
 	
 }
