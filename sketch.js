@@ -27,7 +27,7 @@ function setup() {
 
 	bin1 = new Bin(950,550,230,20);
 	bin2 = new Bin(825,490,20,130);
-	bin3 = new Bin(1055,490,20,130);
+	bin3 = new Bin(1070,490,20,130);
 	
         Engine.run(engine); 
 
