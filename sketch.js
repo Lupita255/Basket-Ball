@@ -27,7 +27,7 @@ function setup() {
 
 	bin1 = new Bin(950,550,230,20);
 	bin2 = new Bin(815,515,20,130);
-	//bin3 = new Bin(965,605,20,130);
+	bin3 = new Bin(995,515,20,130);
 	
         Engine.run(engine); 
 
@@ -43,7 +43,7 @@ function draw() {
 	
 	bin1.display();
 	bin2.display();
-	//bin3.display();
+	bin3.display();
 	
 }
 
