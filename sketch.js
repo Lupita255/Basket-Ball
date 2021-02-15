@@ -42,7 +42,7 @@ function draw() {
 	
 	textSize(20)
         fill("white")
-	text("Score: "+ score, 300,50);
+	text("Score: "+ score, 500,50);
 	
         basketball.display();
 	
