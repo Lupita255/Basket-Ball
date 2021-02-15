@@ -47,10 +47,6 @@ function draw() {
 	bin2.display();
 	bin3.display();
 	
-	if(basketball.isTouching(bin1)){
-		score = score + 3
-	}
-	
 }
 
 function mouseDragged(){
@@ -70,4 +66,10 @@ function keyPressed(){
     Matter.Body.setPosition(basketball.body,{x:200, y:450});
     attach.attach(basketball.body);
   }
+}
+
+function Touch(){
+	if(basketball.isTouching(bin1)){
+		score = score + 3
+	}
 }
