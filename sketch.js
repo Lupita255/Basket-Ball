@@ -47,12 +47,16 @@ function draw() {
 	bin2.display();
 	bin3.display();
 	
+	if(basketball.isTouching(bin1)){
+		score = score + 3
+	}
+	
 }
 
 function mouseDragged(){
     if (gameState!=="launched"){
         Matter.Body.setPosition(basketball.body, {x: mouseX , y: mouseY});
-    }
+   }
 }
 
 
