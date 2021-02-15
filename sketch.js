@@ -55,9 +55,9 @@ function draw() {
 }
 
 function mouseDragged(){
-    if (gameState!=="launched"){
+    //if (gameState!=="launched"){
         Matter.Body.setPosition(basketball.body, {x: mouseX , y: mouseY});
-   }
+   //}
 }
 
 
