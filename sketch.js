@@ -10,8 +10,6 @@ var attach, attachObj;
 
 var bin1, bin2, bin3;
 
-var gameState = "onSling";
-
 var score = 0;
 
 
@@ -55,15 +53,12 @@ function draw() {
 }
 
 function mouseDragged(){
-    //if (gameState!=="launched"){
         Matter.Body.setPosition(basketball.body, {x: mouseX , y: mouseY});
-   //}
 }
 
 
 function mouseReleased(){
     attach.fly();
-    gameState = "launched";
 }
 
 function keyPressed(){
@@ -71,10 +66,4 @@ function keyPressed(){
     Matter.Body.setPosition(basketball.body,{x:200, y:450});
     attach.attach(basketball.body);
   }
-}
-
-function Touch(){
-	if(basketball.isTouching(bin1)){
-		score = score + 3
-	}
 }
