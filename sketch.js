@@ -12,6 +12,8 @@ var bin1, bin2, bin3;
 
 var gameState = "onSling";
 
+var score = 0;
+
 
 function preload(){
 	backgroundImg = loadImage("background.png");
@@ -38,7 +40,10 @@ function setup() {
 function draw() {
 	background(backgroundImg);
 	
-
+	textSize(20)
+        fill("white")
+	text("Score: "+ score, 300,50);
+	
         basketball.display();
 	
 	attach.display();
