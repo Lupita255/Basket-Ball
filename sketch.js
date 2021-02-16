@@ -38,9 +38,9 @@ function setup() {
 function draw() {
 	background(backgroundImg);
 	
-	textSize(20)
-        fill("white")
-	text("Score: "+ score, 500,80);
+	//textSize(20)
+        //fill("white")
+	//text("Score: "+ score, 500,80);
 	
         basketball.display();
 	
