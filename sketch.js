@@ -10,7 +10,6 @@ var attach, attachObj;
 
 var bin1, bin2, bin3;
 
-var score = 0;
 
 
 function preload(){
@@ -38,9 +37,6 @@ function setup() {
 function draw() {
 	background(backgroundImg);
 	
-	//textSize(20)
-        //fill("white")
-	//text("Score: "+ score, 500,80);
 	
         basketball.display();
 	
